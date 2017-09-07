@@ -1,0 +1,19 @@
+
+<table border="1px">
+    <thead>
+        <tr>
+            {% for item in th %}
+                <td>{{ item }}</td>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in tb %}   <!-- item返回的是一个对象 -->
+            <tr>
+                {% for val in item %}
+                    <td>{{ val }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
